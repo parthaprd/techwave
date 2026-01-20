@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechWave Navbar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- Desktop Navbar -->
+    <nav class="bg-gradient-to-r from-indigo-950 via-purple-950 to-indigo-950 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <h1 class="text-3xl font-bold">
+                    <span class="text-white">Tech</span><span class="text-pink-500">Wave</span>
+                </h1>
+            </div>
+
+            <!-- Desktop Menu (hidden on mobile) -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#" class="text-white hover:text-pink-400 transition-colors duration-200">About</a>
+                <a href="#" class="text-white hover:text-pink-400 transition-colors duration-200">Episodes</a>
+                <a href="#" class="text-white hover:text-pink-400 transition-colors duration-200">Host</a>
+            </div>
+
+            <!-- Subscribe Button (hidden on mobile) -->
+            <div class="hidden md:block">
+                <button class="bg-gradient-to-r from-yellow-400 via-pink-500 to-pink-600 text-white px-6 py-2 rounded-full font-medium hover:shadow-lg hover:scale-105 transition-all duration-200 flex items-center">
+                    Subscribe 
+                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu Icon -->
+            <div class="md:hidden text-white">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </div>
+        </div>
+    </nav>
+</body>
+</html>
